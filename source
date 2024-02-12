@@ -1,1 +1,188 @@
-e
+local gui = Instance.new("ScreenGui")
+gui.Name = "patrickGui"
+gui.Parent = game.CoreGui
+
+--screengui = gui
+
+
+--screengui = gui
+
+
+-- gui = ScreenGui
+
+
+
+
+
+
+
+local fr = Instance.new("Frame")
+fr.Size = UDim2.new(0.45, 0, 0.45, 0)
+fr.Position = UDim2.new(0.5, 0, 0.5, 0)
+fr.BackgroundColor3 = Color3.new(1, 1, 1)
+fr.BorderColor3 = Color3.new(0, 0, 0)
+fr.BorderSizePixel = 1
+fr.Active = true
+fr.Draggable = true
+fr.Parent = gui
+
+
+
+	local ImageLabel = Instance.new("ImageLabel")
+	ImageLabel.Parent = fr
+	ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ImageLabel.BackgroundTransparency = 0
+	ImageLabel.BorderColor3 = Color3.fromRGB(27, 27, 27)
+	ImageLabel.BorderSizePixel = 2
+	ImageLabel.Position = UDim2.new(0.001,  0, 0.001, 0)
+	ImageLabel.Size = UDim2.new(0.9955, 0, 0.99)
+	ImageLabel.Image = "rbxassetid://16258583697"
+
+
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(0.4, 0, 0.2, 0)
+title.Position = UDim2.new(0.31, 0, 0.2, 0)
+title.BackgroundColor3 = Color3.new(0, 0, 0)
+title.BackgroundTransparency = 0.6
+title.BorderColor3 = Color3.new(0, 0, 0)
+title.BorderSizePixel = 1
+title.Text = "F3X  </>   GUI"
+title.TextSize = 20
+title.TextColor3 = Color3.new(255, 255, 255)
+title.Font = Enum.Font.Code
+title.Parent = ImageLabel
+
+
+
+local f3x = Instance.new("TextButton")
+f3x.Size = UDim2.new(0.7, 0, 0.15, 0)
+f3x.Position = UDim2.new(0.15, 0, 0.5, 0)
+f3x.BackgroundColor3 = Color3.new(0, 0, 0)
+f3x.BackgroundTransparency = 0.5
+f3x.BorderColor3 = Color3.new(0, 0, 0)
+f3x.BorderSizePixel = 1
+f3x.Text = "Load F3x ggk"
+f3x.TextSize = 20
+f3x.TextColor3 = Color3.new(255, 255, 255)
+f3x.Font = Enum.Font.Code
+f3x.Parent = ImageLabel
+f3x.MouseButton1Click:Connect(function()
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Catserverrr/F3xTest/main/f3x%20hack%20proyect.txt'))()
+
+end)
+
+local dc = Instance.new("TextButton")
+dc.Size = UDim2.new(0.3, 0, 0.2, 0)
+dc.Position = UDim2.new(0.59, 0, 0.75, 0)
+dc.BackgroundColor3 = Color3.new(255,255,255)
+dc.BackgroundTransparency = 0.3
+dc.BorderColor3 = Color3.new(0, 0, 0)
+dc.BorderSizePixel = 4
+dc.Text = "Discord"
+dc.TextSize  = 15
+dc.TextColor3 = Color3.new(0, 0, 0)
+dc.Font = Enum.Font.Code
+dc.Parent = ImageLabel
+dc.MouseButton1Click:Connect(function()
+
+    setclipboard("https://discord.com/invite/HEnqDG4aYw")
+
+end)
+
+
+local iy = Instance.new("TextButton")
+iy.Size = UDim2.new(0.1, 0, 0.2, 0)
+iy.Position = UDim2.new(0.45, 0, 0.75, 0)
+iy.BackgroundColor3 = Color3.new(255, 255, 255)
+iy.BackgroundTransparency = 0.3
+iy.BorderColor3 = Color3.new(0, 0, 0)
+iy.BorderSizePixel = 1
+iy.Text = "iy"
+iy.TextSize = 20
+iy.TextColor3 = Color3.new(0,0,0)
+iy.Font = Enum.Font.Code
+iy.Parent = ImageLabel
+iy.MouseButton1Click:Connect(function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+
+
+local uic1 = Instance.new("UICorner")
+uic1.CornerRadius = UDim.new(5, 9)
+uic1.Parent = iy
+
+
+
+local hub = Instance.new("TextButton")
+hub.Size = UDim2.new(0.3, 0, 0.2, 0)
+hub.Position = UDim2.new(0.12, 0, 0.75, 0)
+hub.BackgroundColor3 = Color3.new(255,255,255)
+hub.BackgroundTransparency = 0.3
+hub.BorderColor3 = Color3.new(0, 0, 0)
+hub.BorderSizePixel = 5
+hub.Text = "Pirutun Hub"
+hub.TextSize = 15
+hub.TextColor3 = Color3.new(0,0,0)
+hub.Font = Enum.Font.Code
+hub.Parent = ImageLabel
+hub.MouseButton1Click:Connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Catserverrr/pirutunHubRbx/main/Protected_2932223426116900.lua.txt"))()
+
+end)
+
+
+local credits = Instance.new("TextLabel")
+credits.Size = UDim2.new(0.3, 0, 0.2, 0)
+credits.Position = UDim2.new(0.35, 0, 0.34, 0)
+credits.BackgroundColor3 = Color3.new(0, 0, 0)
+credits.BackgroundTransparency = 1000
+credits.BorderColor3 = Color3.new(0, 0, 0)
+credits.BorderSizePixel = 1
+credits.Text = "Made BY g00glekidd!1!1!"
+credits.TextSize = 13
+credits.TextColor3 = Color3.new(255, 255, 255)
+credits.Font = Enum.Font.Code
+credits.Parent = ImageLabel
+
+
+
+	local ImageLabel2 = Instance.new("ImageLabel")
+	ImageLabel2.Parent = ImageLabel
+	ImageLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ImageLabel2.BackgroundTransparency = 1
+	ImageLabel2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+	ImageLabel2.BorderSizePixel = 2
+	ImageLabel2.Position = UDim2.new(0.71,   0, 0.2, 0)
+	ImageLabel2.Size = UDim2.new(0.15,  0, 0.20)
+	ImageLabel2.Image = "rbxassetid://16258856888"
+
+
+
+---16258856888  --LOGO
+
+local x = Instance.new("TextButton")
+x.Size = UDim2.new(0.1, 0, 0.2, 0)
+x.Position = UDim2.new(0.99,  0, 0.0, 0)
+x.BackgroundColor3 = Color3.new(0, 0, 0)
+x.BackgroundTransparency = 0.4
+x.BorderColor3 = Color3.new(0, 0, 0)
+x.BorderSizePixel = 1
+x.Text = "X"
+x.TextSize = 19
+x.TextColor3 = Color3.new(255, 255, 255)
+x.Font = Enum.Font.Code
+x.Parent = ImageLabel
+x.mouseButton1Click:Connect(function()
+
+   fr.Visible = false
+   ImageLabel.Visible = false
+
+end)
+
